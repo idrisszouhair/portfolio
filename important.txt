@@ -1,0 +1,2 @@
+in music / multimedia intregration :
+put hover effect that shows my songs, then --> possibility to listen song on click

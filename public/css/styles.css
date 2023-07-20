@@ -90,7 +90,10 @@ h3 {
     text-decoration: none;
     padding: 5rem;
 }
-
+.link-text {
+    color: var(--special-color);
+    font-style: italic;
+}
 /* IMAGE CONTAINER FOR THE FIRST PAGE */
 .first-page {
     position: relative;
@@ -432,6 +435,7 @@ nav.scrolled .logo-container {
     width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
 }
 .project-img {
     width: 100%;
@@ -445,32 +449,30 @@ nav.scrolled .logo-container {
 .project-img:hover {
     opacity: 0;
 }
-.project-detail {
+.project-detail-container {
     position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: 600ms ease;
+}
+.project-detail-container:hover {
+    opacity: 1;
+    background-color: var(--bg-color);
+    cursor: default;
+}
+.project-detail {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.6);
-    width: 38%;
-    height: 79%;
-    top: 8%;
-    opacity: 0;
-    transition: 0.6s;
-}
-.project-detail span{
-    color: red;
-}
-.project-detail:hover {
+    flex-direction: column; 
     opacity: 1;
+    line-height: 2.8ch;
 }
-#project-detail-one {
-    left: 9%;
-}
-#project-detail-two {
-    right: 9%;
-    
-}
+
+
 /* ABOUT PAGE */
 .about-page {
     /* background: putbackground; */
@@ -506,12 +508,12 @@ nav.scrolled .logo-container {
     flex-wrap: wrap;
 }
 .my-picture-container {
-    height: 600px;
+    height: 500px;
     position: absolute;
     right: 0;
 }
 .my-picture {
-    height: 100%;   
+    height: 500px;   
     border-radius: 5ch;
 }
 
@@ -536,15 +538,17 @@ nav.scrolled .logo-container {
     width: 100%;
 }
 .flex-left {
-    flex: 1;
-    margin: 0 20px;
+    margin-top: 3rem;
 }
+
 .flex-left ul li {
     color: var(--sec-color);
 }
-.flex-right {
-    flex: 1;
-    margin: 0 20px;
+.about-music {
+    margin-top: 4rem;
+}
+.about-music h4 {
+    text-align: center;
 }
 .music-wrapper {
     display: inline-flex;
@@ -620,7 +624,35 @@ nav.scrolled .logo-container {
 }
 
 
+/* CONTACT PAGE */
+.contact-page {
+    margin-top: 80rem;
+    margin-left: clamp(0vw, 7vw ,7rem);
+    margin-right: clamp(0vw, 7vw ,7rem);
 
+    position: absolute;
+    padding: 2.5rem;
+    padding-bottom: 0;
+    height: auto;
+    background-color: var(--sec-bg-color);
+    text-align: center;
+    border-radius: 55px;
+
+}
+
+
+.contact-form-container {
+    margin: 0 auto;
+    width: 60%;
+    height: 20rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    transform: translateY(clamp(-30%, 50vw, -10%));
+
+}
 
     /* ANIMATIONS */
 
@@ -657,6 +689,15 @@ nav.scrolled .logo-container {
 }
 #hidden9 {
     transition-delay: 300ms;
+}
+#hidden11 {
+    transition-delay: 200ms;
+}
+#hidden12 {
+    transition-delay: 400ms;
+}
+#hidden13 {
+    transition-delay: 600ms;
 }
 .show {
     opacity: 1;

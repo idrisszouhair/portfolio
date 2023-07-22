@@ -653,6 +653,73 @@ nav.scrolled .logo-container {
     transform: translateY(clamp(-30%, 50vw, -10%));
 
 }
+.contact-form-container {
+    height: 100%;
+    width: 50%;
+}
+.contact-form {
+    margin-top: 5rem;
+}
+.form-img {
+    height: 100%;
+    width: 50%;
+    background-color: grey;
+}
+.contact-me-img {
+    width: 30rem;
+    height: 100%;
+}
+
+.form-title {
+    margin: 30px;
+    margin-bottom: 15px;
+    color: red;
+    font-style: italic;
+}
+
+.contact-input {
+    margin: 15px 0px;
+    margin-left: 2rem;
+    border: blue 1px solid;
+    padding: 20px;
+    color: var(--bg-color);
+    background-color: var(--sec-color);
+    max-width: 100%;
+    border: solid 1px var(--sec-color);
+    font-size: 16px;
+    border-radius: 2ch;
+}
+.contact-input:focus {
+    outline: none;
+}
+textarea {
+    overflow: auto
+}
+#message {
+    width: 516px;
+    letter-spacing: normal;
+    height: 300px;
+    font-family: 'Centra', sans-serif;
+}
+.contact-send-btn-container {
+    background-color: red;
+}
+#contact-send-btn {
+    background: var(--bg-color-sec);
+    border: none;
+    color: var(--bg-color);
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 18rem;
+    font-weight: bold;
+    letter-spacing: 0.13ch;
+}
+
 
     /* ANIMATIONS */
 

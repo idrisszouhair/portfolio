@@ -693,7 +693,7 @@ nav.scrolled .logo-container {
     outline: none;
 }
 textarea {
-    overflow: auto
+    overflow: auto;
 }
 #message {
     width: 516px;

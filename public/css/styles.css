@@ -299,6 +299,7 @@ nav.scrolled .logo-container {
 }
 .skills-text {
     margin: 2rem 20%;
+    margin-top: 50px;
     color : var(--sec-color);
     font-size: clamp(1rem, 3vw ,1.2rem);
     letter-spacing: 0.02ch;
@@ -409,6 +410,14 @@ nav.scrolled .logo-container {
 }
 
 /* PROJECTS PAGE */
+#projects {
+    height: 1px;
+    width: 500px;
+    background-color: red;
+    transform: translateY(-200px);
+    visibility: hidden;
+}
+
 .projects-page {
     margin-left: clamp(0vw, 7vw ,7rem);
     margin-right: clamp(0vw, 7vw ,7rem);
@@ -474,6 +483,14 @@ nav.scrolled .logo-container {
 
 
 /* ABOUT PAGE */
+#about {
+    height: 1px;
+    width: 500px;
+    background-color: red;
+    transform: translateY(-50px);
+    visibility: hidden;
+}
+
 .about-page {
     /* background: putbackground; */
     position: absolute;
@@ -546,6 +563,7 @@ nav.scrolled .logo-container {
 }
 .about-music {
     margin-top: 4rem;
+
 }
 .about-music h4 {
     text-align: center;
@@ -561,7 +579,7 @@ nav.scrolled .logo-container {
 #musicTitle {
     text-align: center;
     color: var(--special-color);
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top: 30px;
     text-transform: capitalize;
 }
@@ -569,7 +587,7 @@ nav.scrolled .logo-container {
     -webkit-appearance: none;
     width: 100%;
     height: 6px;
-    background: var(--special-color);
+    background: var(--sec-color);
     border-radius: 4px;
     cursor: pointer;
     margin: 40px 0;
@@ -593,7 +611,7 @@ nav.scrolled .logo-container {
     width: 60px;
     height: 60px;
     margin: 20px;
-    background: var(--color);
+    background: var(--sec-color);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -604,7 +622,7 @@ nav.scrolled .logo-container {
 
 #pauseDiv, #playDiv {
     transform: scale(1.5);
-    background-color: var(--special-color);
+    background-color: var(--color);
     color: #fff;
     padding-left: 5px;
     padding-top: 5px;
@@ -617,10 +635,10 @@ nav.scrolled .logo-container {
 }
 #previousDiv, #nextDiv  {
     padding-top: 5px;
-    padding-left: 7px;
+    padding-left: 8px;
 }
 #previousDiv {
-    padding-left: 4px;
+    padding-left: 5px;
 }
 
 
@@ -682,6 +700,8 @@ nav.scrolled .logo-container {
     margin-left: 2rem;
     border: blue 1px solid;
     padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: var(--bg-color);
     background-color: var(--sec-color);
     max-width: 100%;
@@ -698,26 +718,28 @@ textarea {
 #message {
     width: 516px;
     letter-spacing: normal;
-    height: 300px;
+    height: 250px;
     font-family: 'Centra', sans-serif;
 }
 .contact-send-btn-container {
-    background-color: red;
+
 }
 #contact-send-btn {
-    background: var(--bg-color-sec);
-    border: none;
-    color: var(--bg-color);
-    padding: 20px 32px;
+    background: var(--special-color-low);
+    border: 2px solid var(--sec-color);
+    border-radius: 1ch;
+    color: var(--color);
+    padding: 20px 160px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
-    margin-left: 18rem;
     font-weight: bold;
-    letter-spacing: 0.13ch;
+    letter-spacing: 0.3ch;
+    margin-left: 29px;
+    margin-top: 20px;
 }
 
 
@@ -846,18 +868,47 @@ textarea {
     .nav {
         position: absolute;
     }
+    .first-page {
+       position : absolute;
+    }
+    .home-page {
+        height: auto;
+    }
     .home-text {
         width: 80%;
+    }
+    .skills-page {
+        position: relative;
+        top: 0;
+        margin-top: 50vw;
     }
     .skills-container {
         margin: 0 auto;
         width: 70%;
+    }
+    .skills-text {
+        margin-top: 50px;
     }
     .left-btn-container {
         left: 8%;
     }
     .right-btn-container {
         right: 8%;
+    }
+    .projects-page {
+        margin-top: 10vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .project {
+        width: 50%;
+    }
+    .project-detail {
+        font-size: 2vw;
     }
     .about-page {
         width: 80%;
@@ -896,6 +947,12 @@ textarea {
         margin: 2rem 10%;
         margin-bottom: 0;
     }
+    .projects-container {
+        margin-top: 0;
+    }
+    .project {
+        width: 60%;
+    }
     .about-page {
         width: 90%;
     }
@@ -908,6 +965,9 @@ textarea {
 }
 
 @media only screen and (max-width: 1200px) {
+    .project {
+        width: 65%;
+    }
     .my-picture {
         position: relative;
     }
@@ -919,6 +979,12 @@ textarea {
     }
     .about-content-container {
         display: block;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .about-music-container {
+        margin: auto;
+        width: 50%;
     }
 }
 
@@ -946,6 +1012,13 @@ textarea {
     .right-btn-container {
         right: 1%;
     }
+    .project {
+        width: 70%;
+        margin-top: 40px;
+    }
+    .project-detail {
+        font-size: 3vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -956,8 +1029,23 @@ textarea {
         width: 100%;
         margin-bottom: 15vw;
     }
+    .skills-page {
+        margin-top: 300px;
+    }
     .skill-container {
         width: 20%; 
     }
+    .project {
+        width: 80%;
+    }
 }
+}
+
+@media only screen and (max-width: 475px) {
+    .skills-page {
+        height: 45rem;
+    }
+    .skill-container {
+        width: 30%; 
+    }
 }

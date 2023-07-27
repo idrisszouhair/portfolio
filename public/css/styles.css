@@ -520,9 +520,6 @@ nav.scrolled .logo-container {
 .about-text-container {
     width: calc(100% - 480px);
     height: 600px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .my-picture-container {
     height: 500px;
@@ -551,13 +548,10 @@ nav.scrolled .logo-container {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.flex-top {
-    width: 100%;
-}
-.flex-left {
-    margin-top: 3rem;
-}
 
+.flex-left {
+    margin-top: 50px;
+}
 .flex-left ul li {
     color: var(--sec-color);
 }
@@ -571,6 +565,7 @@ nav.scrolled .logo-container {
 .music-wrapper {
     display: inline-flex;
     align-items: center;
+    margin-left: 40px;
 }
 .music-container {
     align-items: center;
@@ -657,26 +652,27 @@ nav.scrolled .logo-container {
     border-radius: 55px;
 
 }
-
-
+.break {
+    flex-basis: 100%;
+    width: 0;;
+}
 .contact-form-container {
     margin: 0 auto;
-    width: 60%;
-    height: 20rem;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
     transform: translateY(clamp(-30%, 50vw, -10%));
-
-}
-.contact-form-container {
     height: 100%;
-    width: 50%;
+    width: 100%;
+    padding-bottom: 0;
+
 }
 .contact-form {
     margin-top: 5rem;
+    margin: 0 auto;
+    width: 100%;
 }
 .form-img {
     height: 100%;
@@ -697,7 +693,6 @@ nav.scrolled .logo-container {
 
 .contact-input {
     margin: 15px 0px;
-    margin-left: 2rem;
     border: blue 1px solid;
     padding: 20px;
     padding-top: 15px;
@@ -708,6 +703,7 @@ nav.scrolled .logo-container {
     border: solid 1px var(--sec-color);
     font-size: 16px;
     border-radius: 2ch;
+    margin-left: 0;
 }
 .contact-input:focus {
     outline: none;
@@ -716,11 +712,15 @@ textarea {
     overflow: auto;
 }
 #message {
-    width: 516px;
+    width: 510px;
     letter-spacing: normal;
     height: 250px;
     font-family: 'Centra', sans-serif;
 }
+#email, #lastname {
+    margin-left: 2rem;
+}
+
 .contact-send-btn-container {
 
 }
@@ -738,7 +738,6 @@ textarea {
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 0.3ch;
-    margin-left: 29px;
     margin-top: 20px;
 }
 
@@ -880,7 +879,7 @@ textarea {
     .skills-page {
         position: relative;
         top: 0;
-        margin-top: 50vw;
+        margin-top: 35vw;
     }
     .skills-container {
         margin: 0 auto;
@@ -922,8 +921,11 @@ textarea {
 /*        flex-wrap:nowrap;
         flex-direction: column;*/
     }
-    .flex-top {
+    .contact-form-container {
         width: 100%;
+    }
+    .contact-form {
+        width: 50%;
     }
 }
 @media only screen and (max-width: 1335px) {
@@ -961,8 +963,9 @@ textarea {
     }
     .about-text-container {
         width: calc(100% - 370px);
-        
+    }
 }
+
 
 @media only screen and (max-width: 1200px) {
     .project {
@@ -985,6 +988,22 @@ textarea {
     .about-music-container {
         margin: auto;
         width: 50%;
+    }
+    .about-container {
+        margin-right: 0;
+    }
+    .about-text-container {
+        margin-right: 0;
+        width: 90vw;
+    }
+    .my-picture-container {
+        width: 100%;
+        display: flex;
+        margin-top: 400px;
+        justify-content: space-evenly;
+    }
+    .contact-page {
+        margin-top: 100rem;
     }
 }
 
@@ -1019,6 +1038,15 @@ textarea {
     .project-detail {
         font-size: 3vw;
     }
+    .my-picture-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 600px;
+    }
+    .music-wrapper {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1038,7 +1066,6 @@ textarea {
     .project {
         width: 80%;
     }
-}
 }
 
 @media only screen and (max-width: 475px) {

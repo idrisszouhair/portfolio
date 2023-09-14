@@ -45,7 +45,6 @@ app.post('/', (req, res) => {
             pass: process.env.NODEMAILER_PASSWORD,
         }
     })
-
     const mailOptions = {
         from: req.body.email,
         to: 'idriss.zouhair.dev@gmail.com',

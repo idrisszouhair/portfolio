@@ -1097,6 +1097,15 @@ textarea {
     .project {
         width: 80%;
     }
+    .my-picture-container {
+        margin-top: 50rem;
+    }
+    .about-music {
+        margin-top: 5rem;
+    }
+    .contact-page {
+        margin-top: 112rem;
+    }
 
 }
 

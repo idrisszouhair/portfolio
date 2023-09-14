@@ -3,7 +3,10 @@ let song = document.getElementById("song");
 const playDiv = document.querySelector('#playDiv');
 const pauseDiv = document.querySelector('#pauseDiv');
 let count = 1;
-song.pause();
+
+window.onload = function() {
+    song.play();
+}
 
 song.onloadedmetadata = function(){
     progress.max = song.duration;

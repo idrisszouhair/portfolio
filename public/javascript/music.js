@@ -46,10 +46,10 @@ function doMusic() {
             document.getElementById("musicTitle").innerHTML = "Into the Void";
     } else if (count == 5) {
             song.setAttribute('src', `audio/music5.mp3`);
-            document.getElementById("musicTitle").innerHTML = "Summoning Ra (intro)";
+            document.getElementById("musicTitle").innerHTML = "Summoning Ra";
     } else if (count == 6) {
             song.setAttribute('src', `audio/music6.mp3`);
-            document.getElementById("musicTitle").innerHTML = "Summoning Ra";
+            document.getElementById("musicTitle").innerHTML = "Summoning Ra*";
     } else if (count == 7) {
             song.setAttribute('src', `audio/music7.mp3`);
             document.getElementById("musicTitle").innerHTML = "Nothing to Lose";

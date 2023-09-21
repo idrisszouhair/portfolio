@@ -239,17 +239,9 @@ nav.scrolled .logo-container {
 .menu.scrolled {
     top: 1.8rem;
 }
-/* NAV MENU FOR SMALL SCREENS */
-nav .active {
-    height: 10000px;
-    background-color: var(--sec-color);
-    width: 100%;
 
-}
-.active ul li a {
-    color: red;
-    background-color: blue;
-}
+/* NAVBAR MENU FOR SMALL SCREENS */
+
 
 /* HOME */
 .home-page {

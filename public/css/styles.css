@@ -845,12 +845,12 @@ footer ul {
     }
 }
 
-/* SPECIAL SECRET :) */
+
 .special-secret {
     visibility: hidden;
     z-index: -99999;
 }
-/*
+
 @media screen and (min-aspect-ratio: 1.334/1) and (max-aspect-ratio: 1.45/1) {
     .special-secret {
         visibility: visible;
@@ -888,7 +888,6 @@ footer ul {
         bottom: 15%;
     }
 }
-*/
 
     /* MEDIA SCREENS */
 

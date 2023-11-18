@@ -40,6 +40,8 @@ app.post('/', (req, res) => {
 
     const transporter = nodemailer.createTransport({
         service: 'hotmail',
+        port: 587,
+        secure: false,
         auth: {
             user: process.env.NODEMAILER_ACCOUNT,
             pass: process.env.NODEMAILER_PASSWORD,

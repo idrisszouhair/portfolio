@@ -39,17 +39,17 @@ app.post('/', (req, res) => {
     console.log(req.body);
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'hotmail',
         auth: {
-            user: 'idriss.zouhair.dev@gmail.com',
+            user: process.env.NODEMAILER_ACCOUNT,
             pass: process.env.NODEMAILER_PASSWORD,
         }
     })
     const mailOptions = {
-        from: req.body.email,
-        to: 'idriss.zouhair.dev@gmail.com',
+        from: process.env.NODEMAILER_ACCOUNT,
+        to: process.env.NODEMAILER_ACCOUNT,
         message : `Message from ${req.body.email}: ${req.body.message}`,
-        text: req.body.message
+        text: `Website : Portfolio. Email from : ${req.body.email}. Message : ${req.body.message}`
     } 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
